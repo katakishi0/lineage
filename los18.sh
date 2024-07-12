@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-lfs
+repo init --depth=1 -u https://github.com/LineageOS/android.git -b lineage-18.1 --git-lfs
 
 echo "=================="
 echo "Repo init success"
@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch lineage_channel-ap2a-userdebug
+lunch lineage_channel-ap2-userdebug
 echo "============="
 
 # Build rom
